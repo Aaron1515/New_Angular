@@ -4,6 +4,25 @@
   <h3>Testing the app</h3>
 
   <div ng-controller="mainController">
-  </div>
+    <h2>{{name + '!'}}</h2>
 
+    <div>
+      <!-- 2 way data binding example -->
+      <lable>What is your twitter handle?</lable>
+      <input type="text" ng-model="twitterName">
+      <hr>
+      <H2>twitter.com/{{ lowercaseTwitterName() }}</H2>
+    </div>
+
+    <div>
+      <input type='text'
+    </div>
+
+
+
+
+
+
+
+  </div>
 </div>
