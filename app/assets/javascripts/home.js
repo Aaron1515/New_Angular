@@ -1,10 +1,9 @@
 var myApp = angular.module('myApp', [])
 
-myApp.controller('test', function(){
-  console.log("works")
+myApp.controller('mainController', function($scope){
+  console.log($scope);
 })
 
 
 console.log("home.js loaded")
 
-console.log(myApp)
