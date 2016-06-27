@@ -1,2 +1,10 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+var myApp = angular.module('myApp', [])
+
+myApp.controller('test', function(){
+  console.log("works")
+})
+
+
+console.log("home.js loaded")
+
+console.log(myApp)
