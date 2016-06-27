@@ -16,14 +16,19 @@ myApp.controller('mainController', function($scope,$timeout, $filter){
 
 });
 
+
+
 // Plain old JS
-var testA =
+window.onload = function(){
+  var tb = document.getElementById("testA");
 
+  tb.addEventListener('keypress',
+    function(event){
+      console.log("pressed key");
+    }
+  )
 
-
-
-
-
+}
 
 
 
