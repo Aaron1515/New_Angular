@@ -15,6 +15,8 @@ myApp.controller('mainController', function($scope, $timeout, $filter){
     return $filter('lowercase')($scope.twitterName)
   }
 
+  $scope.char = 5;
+
   // Watch how it works in console
   $scope.$watch('twitterName', function(oldValue, newValue){
     console.log("Something is changing!");
@@ -49,8 +51,8 @@ myApp.controller('mainController', function($scope, $timeout, $filter){
   // Plain Angular - shorter code
   $timeout(function(){
     $scope.twitterName = "something cool";
-    console.log("twitter handle changed");
-  }, 2000)
+    console.log("twitter handle will change in 2 sec");
+  }, 10000)
 
 });
 
