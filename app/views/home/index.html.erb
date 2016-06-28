@@ -16,7 +16,21 @@
       <input type="text" ng-model="twitterName">
       <h3>the name in the input turns into lower case</h3>
       <H2>twitter.com/{{ lowercaseTwitterName() }}</H2>
-    </div>
+
+      <!-- ng-if , ng-show (show in css), ng-hide(hide in) -->
+
+      <!--
+      <div class="alert alert-warning" ng-if="twitterName.length < char">
+        Need to be more than 5 chars.
+      </div>
+
+      or
+      -->
+
+      <!-- Add class if the char is lower, ng-show true if char length is lower than char, you can add more than 1 class -->
+      <div class="alert" ng-class="{ 'alert-warning': twitterName.length < char }" ng-show="twitterName.length < char">
+        Name needs to be over 5 char.
+      </div>
 
     <hr>
     <hr>
