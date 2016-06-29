@@ -15,7 +15,8 @@
       <lable>What is your twitter handle?</lable>
       <input type="text" ng-model="twitterName">
       <h3>the name in the input turns into lower case</h3>
-      <H2>twitter.com/{{ lowercaseTwitterName() }}</H2>
+            <!-- Ng cloak will nto show this div unless angular is fully loaded. -->
+      <H2 ng-cloak>twitter.com/{{ lowercaseTwitterName() }}</H2>
 
       <!-- ng-if , ng-show (show in css), ng-hide(hide in) -->
 
