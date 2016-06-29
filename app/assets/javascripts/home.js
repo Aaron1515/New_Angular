@@ -15,6 +15,8 @@ myApp.controller('mainController', function($scope, $timeout, $filter){
     return $filter('lowercase')($scope.twitterName)
   }
 
+  $scope.char = 5;
+
   // Watch how it works in console
   $scope.$watch('twitterName', function(oldValue, newValue){
     console.log("Something is changing!");
@@ -49,11 +51,28 @@ myApp.controller('mainController', function($scope, $timeout, $filter){
   // Plain Angular - shorter code
   $timeout(function(){
     $scope.twitterName = "something cool";
-    console.log("twitter handle changed");
-  }, 2000)
+    console.log("twitter handle will change in 2 sec");
+  }, 10000)
 
 });
 
 
 console.log("home.js is loaded")
 
+
+
+////////API call for Angular ////////
+// example of making an async call with Angular
+
+
+// myApp.controller('mainController', function($scope, $http){
+
+//   $http.get('/shoes/1')
+//     .success(function(result){
+//       console.log(result)
+//       $scope.apiResult = result
+//     .error(function(data, status){
+//       console.log(data, status)
+//     })
+//   })
+// })
