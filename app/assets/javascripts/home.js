@@ -59,3 +59,20 @@ myApp.controller('mainController', function($scope, $timeout, $filter){
 
 console.log("home.js is loaded")
 
+
+
+////////API call for Angular ////////
+// example of making an async call with Angular
+
+
+// myApp.controller('mainController', function($scope, $http){
+
+//   $http.get('/shoes/1')
+//     .success(function(result){
+//       console.log(result)
+//       $scope.apiResult = result
+//     .error(function(data, status){
+//       console.log(data, status)
+//     })
+//   })
+// })
